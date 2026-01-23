@@ -1,309 +1,210 @@
 # readme
-CHIPUS — Ferramenta de Coleta e Rastreabilidade de Requisitos
+🧪 CHIPUS - Ferramenta de Coleta e Rastreabilidade de Requisitos
+Sistema web para gerenciamento automatizado de testes de semicondutores, desenvolvido para a Chipus Microeletrônica, substituindo processos manuais repetitivos por uma plataforma centralizada e eficiente.
 
-Sistema web para gerenciamento automatizado de testes de semicondutores, desenvolvido para a Chipus Microeletrônica, com o objetivo de substituir processos manuais repetitivos por uma plataforma centralizada, segura e eficiente, garantindo rastreabilidade completa dos testes de validação de ASICs.
 
-🏢 Empresa Parceira — Chipus Microeletrônica
+🏢 Empresa Parceira
+CHIPUS
+ Empresa fabless fundada em 2008, especializada em:
+ASICs Turnkey de sinal misto
 
-A Chipus Microeletrônica é uma empresa fabless fundada em 2008, especializada em:
 
-ASICs turnkey de sinal misto
+Blocos IP
 
-Desenvolvimento de blocos IP
 
 Design de Circuitos Integrados (IC)
 
+
 📍 Sede: Florianópolis – SC
-🌍 Atuação: Estados Unidos, Europa e Ásia
-🔗 Site: https://chipus.com
+ 🌍 Atuação: EUA, Europa e Ásia
 
-📌 Contexto do Projeto
+Contexto do Projeto
+A Chipus Microeletrônica enfrentava desafios na gestão de dados de testes de semicondutores:
+Processos manuais repetitivos e propensos a erros
+Dificuldade no armazenamento e organização de dados de testes
+Falta de rastreabilidade nos processos de validação de ASICs
+Solução: Desenvolvimento de uma plataforma web para automatizar a coleta, organização e rastreabilidade de requisitos de testes.
 
-A Chipus enfrentava diversos desafios na gestão de dados de testes de semicondutores, entre eles:
 
-Processos manuais repetitivos e suscetíveis a erros
-
-Dificuldade no armazenamento e organização dos dados de testes
-
-Ausência de rastreabilidade no processo de validação de ASICs
-
-💡 Solução Proposta
-
-Desenvolvimento de uma plataforma web para automatizar a coleta, organização e rastreabilidade dos requisitos de testes, centralizando informações e otimizando o fluxo de validação.
-
-⚙️ Funcionalidades Principais
-🔐 Autenticação e Segurança
-
-Login corporativo com e-mail e senha
-
+Funcionalidades Principais
+Autenticação e Segurança
+Login corporativo com e-mail e senha da empresa
 Interface administrativa protegida
-
-📁 Gestão de Projetos
-
+Gestão de Projetos
 Criação e organização de projetos de testes
-
 Vinculação com Google Sheets e Google Drive
-
-Visualização de projetos em cards organizados
-
-🧪 Controle de Testes
-
-Registro detalhado de cada teste:
-
-Nome
-
-Índice
-
-Resultado
-
-Seed
-
-Tag
-
-Status visual (PASSOU / FALHOU)
-
+Visualização de todos os projetos em cards organizados
+Controle de Testes
+Registro detalhado de cada teste (nome, índice, resultado, seed, tag)
+Status visual (PASSOU/FALHOU) com identificação rápida
 Histórico de atividades recentes
 
-📊 Relatórios e Rastreabilidade
-
+Relatórios e Rastreabilidade
 Geração de relatórios detalhados por projeto
-
 Informações completas de cada teste:
-
 Rastreabilidade (TRC)
-
 RTL (Register Transfer Level)
-
 Versão do ambiente
-
 Último executor
+Exportação para PDF
+Operações CRUD
+Criar novos projetos
+Visualizar detalhes completos
+Atualizar informações do projeto
+Excluir projetos quando necessário
 
-Exportação de relatórios em PDF
-
-🔄 Operações CRUD
-
-Criar projetos
-
-Visualizar detalhes
-
-Atualizar informações
-
-Excluir projetos
-
-🛠️ Stack Tecnológica
+Stack Tecnológica
 Frontend
-
-HTML5
-
-CSS3
-
-JavaScript
-
+HTML5, CSS3, JavaScript
 Design responsivo e intuitivo
-
-Paleta de cores alinhada à identidade visual da Chipus
-
+Paleta de cores alinhada com identidade visual da Chipus
 Ferramentas de Desenvolvimento
-
 IDE: Visual Studio Code
-
-Design/Prototipação: Figma / Adobe XD
-
-Documentação: Google Docs / Google Sheets
-
+Design/Prototipação: Figma/Adobe XD
+Documentação: Google Docs/Sheets
 Controle de Versão: Git
-
 Integrações
-
 Google Sheets API
-
 Google Drive API
-
 Google Cloud Platform
 
-🏗️ Arquitetura do Sistema
+Arquitetura do Sistema
 
-O sistema é baseado em uma arquitetura web modular, integrando autenticação, gestão de projetos, controle de testes e geração de relatórios, com suporte a APIs externas do Google para armazenamento e sincronização de dados.
-
-🚀 Instalação e Configuração
+Instalação e Configuração
 Pré-requisitos
-
 Node.js (v16 ou superior)
-
 NPM ou Yarn
-
-Conta no Google Cloud Platform
-
-Acesso ao Google Workspace (autenticação corporativa)
-
+Conta Google Cloud Platform (para APIs)
+Acesso ao Google Workspace (para autenticação corporativa)
 Passos para Configuração
-1️⃣ Clonar o repositório
+1. Clonar o repositório
 git clone https://github.com/seu-usuario/chipus-web-app.git
 cd chipus-web-app
 
-2️⃣ Instalar dependências
+2. Instalar dependências
+
 npm install
 # ou
 yarn install
 
-3️⃣ Configurar variáveis de ambiente
 
-Crie um arquivo .env na raiz do projeto:
 
+3. Configurar variáveis de ambiente
+Crie um arquivo .env na raiz:
 GOOGLE_CLIENT_ID=seu_client_id_aqui
 GOOGLE_API_KEY=sua_api_key_aqui
 SESSION_SECRET=seu_secret_aqui
 DATABASE_URL=url_do_banco
 APP_ENV=development
 
-4️⃣ Configurar Google APIs
-
-Acessar o Google Cloud Console
-
-Criar um novo projeto
-
+4. Configurar Google APIs
+Acessar Google Cloud Console
+Criar novo projeto
 Habilitar Google Sheets API e Google Drive API
-
 Criar credenciais OAuth 2.0
-
-5️⃣ Executar a aplicação
-# Ambiente de desenvolvimento
+5. Executar aplicação
+bash
+#Ambiente de desenvolvimento
 npm run dev
 
-# Build para produção
+#Build para produção
 npm run build
 
-🖥️ Telas do Sistema
-🔑 Login (/login)
 
-Autenticação corporativa
-
-Validação de credenciais
-
-Interface alinhada ao branding da Chipus
-
-📊 Dashboard (/dashboard)
-
+Telas do Sistema
+1. Login (/login)
+Tela de autenticação corporativa
+Validação de e-mail e senha
+Design alinhado com branding Chipus
+2. Dashboard (/dashboard)
 Visão geral das atividades
-
 Cards de projetos recentes
-
 Feed de atividades
 
-📁 Gestão de Projetos (/projects)
 
-Listagem completa de projetos
-
+3. Gestão de Projetos (/projects)
+Listagem de todos os projetos
 Cards com informações resumidas
-
-Ações: criar, editar e excluir
-
-📄 Detalhes do Projeto (/projects/:id)
-
+Botões de ação (novo, editar, excluir)
+4. Detalhes do Projeto (/projects/:id)
 Tabela completa de testes
-
 Estatísticas do projeto
-
 Links para planilhas e documentos
-
-Opções de modificação e exclusão
-
-📑 Relatórios (/reports)
-
+Botões de modificação e exclusão
+5. Relatórios (/reports)
 Visualização de relatórios gerados
-
 Informações detalhadas de rastreabilidade
+Botões para exportar PDF
 
-Exportação em PDF
-
-🗂️ Modelo de Dados
+Modelo de Dados
 Projeto
+
 {
-  "id": "string",
-  "name": "string",
-  "spreadsheetUrl": "string",
-  "driveUrl": "string",
-  "testCount": "number",
-  "createdAt": "timestamp",
-  "updatedAt": "timestamp"
+  id: "string",
+  name: "string",
+  spreadsheetUrl: "string",
+  driveUrl: "string",
+
+  testCount: "number",
+  createdAt: "timestamp",
+  updatedAt: "timestamp"
 }
 
 Teste
+
+javascript
 {
-  "id": "string",
-  "projectId": "string",
-  "index": "string",
-  "name": "string",
-  "result": "PASSOU | FALHOU",
-  "seed": "string",
-  "tag": "string",
-  "executor": "string",
-  "traceability": "string",
-  "rtl": "string",
-  "environmentVersion": "string",
-  "executedAt": "timestamp"
+  id: "string",
+  projectId: "string",
+  index: "string",       // Ex: "T.01"
+  name: "string",        // Ex: "#TKILL1"
+  result: "string",      // "PASSOU" ou "FALHOU"
+  seed: "string",
+  tag: "string",
+  executor: "string",
+  traceability: "string", // Ex: "TRC-GMA-001"
+  rtl: "string",         // Ex: "RTL-2024-001"
+  environmentVersion: "string",
+  executedAt: "timestamp"
 }
 
-👥 Equipe de Desenvolvimento
-
+Equipe de Desenvolvimento
 Julielen Arnoud
-
 Milena Castro
-
 Raquel da Silva
-
 Kimberlin Rodrigues
-
 Samuel Walter
 
-🔮 Roadmap (Próximas Funcionalidades)
-
-Integração contínua com sistemas internos da Chipus
-
+Próximas Funcionalidades (Roadmap)
+Integração contínua com sistemas da Chipus
 Notificações em tempo real
-
 Dashboard analítico com gráficos
-
 API RESTful completa
-
-Aplicativo móvel complementar
-
+App móvel complementar
 Automação de testes via integração direta
 
-📈 Impacto Esperado
 
+Licença
+Este projeto foi desenvolvido para a Chipus Microeletrônica como parte de um projeto acadêmico/parceria. O código é propriedade intelectual da equipe de desenvolvimento.
+
+
+
+Impacto Esperado
 Redução de 80% no tempo de registro de testes
-
-Eliminação de erros manuais de transcrição
-
+Eliminação de erros manuais na transcrição
 Rastreabilidade completa do ciclo de testes
-
-Centralização total dos dados
-
+Centralização de todos os dados em uma plataforma
 Automação de processos repetitivos
 
-📄 Licença
+✅ Pontos Fortes (Já incluídos):
+✅ Visão geral do projeto
+✅ Contexto do problema e solução
+✅ Funcionalidades principais detalhadas
+✅ Stack tecnológica
+✅ Arquitetura do sistema
+✅ Instalação e configuração passo a passo
+✅ Modelo de dados
+✅ Equipe de desenvolvimento
+✅ Roadmap futuro
+✅ Informações de contato
 
-Este projeto foi desenvolvido para a Chipus Microeletrônica como parte de um projeto acadêmico/parceria.
-O código é propriedade intelectual da equipe de desenvolvimento e da Chipus Microeletrônica.
-
-📬 Contato
-
-Parceiro Industrial: Chipus Microeletrônica
-📍 Florianópolis – SC, Brasil
-🌐 https://chipus.com
-
-Para questões técnicas, utilize o repositório do projeto.
-
-
-
-
-
-
-
-
-
-
-
-
- 
