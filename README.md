@@ -223,4 +223,10 @@ Para o admin do servidor (já estar logado no servidor):
 "samuel": "gama_experience"
 }
 Para salvar CTRL + X, pressionar “y” e ENTER.
+Windows
+Criação de uma chave SSH (no pc do usuário):
+1-	Abra do CMD;
+2-	Digite o código “ssh-keygen -t rsa -b 4096”
+3-	Apertar ENTER 3 vezes para criar uma chave SSH sem password
+4-	Digite o comando no CMD “type %USERPROFILE%\.ssh\id_rsa.pub | ssh -p PortaDoServidor NomeDoServidor@IPdoServidor "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 700 ~/.ssh && chmod 600 ~/.ssh/authorized_keys"”, Ele vai pedir a senha do seu servidor uma última vez para autorizar a nova chave.
 A pasta deve ter permissão 700 e os id_ssh devem ter permissão 600
