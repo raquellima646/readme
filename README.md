@@ -208,3 +208,20 @@ Automação de processos repetitivos
 ✅ Roadmap futuro
 ✅ Informações de contato
 
+script para deixar pronto o servidor e criamos pasta de autenticação e projetos e seus respectivos arquivos internos;
+Ajeitamos com o Marcio o servidor para fazer a simulação, script para automatizar a transferencia  dos log para o drive;
+ 
+Deve ser criado um arquivo usuários.json e projetos.json e colocar o caminho deles no arquivo config.ini!!!
+
+Para o admin do servidor (já estar logado no servidor):
+1-	Va até onde quer salvar criar as informações de usuário;
+2-	Use o comando “nano ~/Documents/Autenticacao/usuarios.json” (caminho de exemplo, usar o que quiser)
+3-	Digitar usuários nesse formato:
+{
+"ana": "senha123",
+"bruno": "palavra_secreta",
+"samuel": "gama_experience"
+}
+Para salvar CTRL + X, pressionar “y” e ENTER.
+O arquivo config.ini vem configurado com o caminho da chave ssh padrão pro Windows, se for usado Linux deve ser alterado esse caminho (~/.ssh/)
+A pasta deve ter permissão 700 e os id_ssh devem ter permissão 600
