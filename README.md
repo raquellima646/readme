@@ -223,5 +223,4 @@ Para o admin do servidor (já estar logado no servidor):
 "samuel": "gama_experience"
 }
 Para salvar CTRL + X, pressionar “y” e ENTER.
-O arquivo config.ini vem configurado com o caminho da chave ssh padrão pro Windows, se for usado Linux deve ser alterado esse caminho (~/.ssh/)
 A pasta deve ter permissão 700 e os id_ssh devem ter permissão 600
