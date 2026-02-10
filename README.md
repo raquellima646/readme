@@ -223,7 +223,9 @@ Para o admin do servidor (já estar logado no servidor):
 "samuel": "gama_experience"
 }
 Para salvar CTRL + X, pressionar “y” e ENTER.
+
 Windows
+
 Criação de uma chave SSH (no pc do usuário):
 1-	Abra do CMD;
 2-	Digite o código “ssh-keygen -t rsa -b 4096”
