@@ -151,8 +151,6 @@ Projeto
 }
 
 Teste
-
-javascript
 {
   id: "string",
   projectId: "string",
